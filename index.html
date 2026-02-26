@@ -4,9 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>HOPE OF YOUTH SARL | Solutions techniques en RDC</title>
+<title>HOPE OF YOUTH SARL | ICT, Starlink, Solaire & Télécom en RDC</title>
 
-<meta name="description" content="HOPE OF YOUTH SARL est une société multiservices basée à Goma spécialisée en ICT, énergie solaire, télécom, CCTV et solutions techniques en RDC.">
+<meta name="description" content="HOPE OF YOUTH SARL fournit des solutions ICT, énergie solaire, Starlink, CCTV et télécommunications pour ONG et entreprises en RDC.">
 
 <link rel="stylesheet" href="./css/style.css">
 <script defer src="./js/script.js"></script>
@@ -14,58 +14,96 @@
 
 <body>
 
-<header class="hero">
-    <h1>HOPE OF YOUTH SARL</h1>
-    <p>Solutions techniques innovantes en République Démocratique du Congo</p>
-    <a href="#contact" class="btn">Nous contacter</a>
-</header>
-
+<!-- NAVBAR -->
 <nav class="navbar">
-    <a href="#about">À propos</a>
-    <a href="#services">Services</a>
-    <a href="#projects">Références</a>
-    <a href="#contact">Contact</a>
+    <div class="logo-box">
+        <img src="./images/logo.png" class="logo">
+        <span>HOPE OF YOUTH</span>
+    </div>
+
+    <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#pricing">Tarifs</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <button id="darkToggle">🌙</button>
 </nav>
 
-<section id="about" class="section">
-    <h2>À propos</h2>
+<!-- HERO -->
+<header class="hero">
+    <img src="./images/logo.png" class="hero-logo">
+    <h1>HOPE OF YOUTH SARL</h1>
+    <p>Technology & Infrastructure Solutions in DR Congo</p>
+
+    <div class="hero-buttons">
+        <a href="#contact" class="btn">Contact</a>
+        <a href="#pricing" class="btn outline">Voir nos tarifs</a>
+    </div>
+</header>
+
+<!-- ABOUT -->
+<section id="about" class="section reveal">
+    <h2>About Us</h2>
     <p>
-        HOPE OF YOUTH SARL est une société multiservices basée à Goma spécialisée
-        dans les technologies ICT, l’énergie solaire, les télécommunications
-        et la sécurité électronique pour ONG, entreprises et institutions.
+        HOPE OF YOUTH SARL is a multidisciplinary company based in Goma,
+        delivering ICT, solar energy, Starlink, CCTV and telecom solutions
+        for NGOs and enterprises across DR Congo.
     </p>
 </section>
 
+<!-- SERVICES -->
 <section id="services" class="section alt">
-    <h2>Nos Services</h2>
-
+    <h2>Our Services</h2>
     <div class="grid">
-        <div class="card">💻 Informatique & ICT</div>
-        <div class="card">☀️ Énergie solaire</div>
-        <div class="card">📡 Télécom & Starlink</div>
-        <div class="card">🎥 CCTV & Sécurité</div>
-        <div class="card">🌐 Réseaux & Fibre</div>
-        <div class="card">🚛 Transport logistique</div>
+        <div class="card reveal">💻 ICT & Networking</div>
+        <div class="card reveal">☀️ Solar Installations</div>
+        <div class="card reveal">📡 Starlink & VSAT</div>
+        <div class="card reveal">🎥 CCTV Security</div>
+        <div class="card reveal">🌐 Fiber Networks</div>
+        <div class="card reveal">🚛 Technical Logistics</div>
     </div>
 </section>
 
-<section id="projects" class="section">
-    <h2>Références</h2>
-    <p>
-        Nous avons collaboré avec plusieurs ONG internationales et institutions
-        en fournissant des solutions ICT, CCTV et télécom dans plusieurs villes
-        de la RDC.
-    </p>
+<!-- GALLERY TRAVAUX REELS -->
+<section id="gallery" class="section">
+    <h2>Our Field Work</h2>
+
+    <div class="gallery">
+        <img src="./images/work1.jpg">
+        <img src="./images/work2.jpg">
+        <img src="./images/work3.jpg">
+        <img src="./images/work4.jpg">
+        <img src="./images/work5.jpg">
+        <img src="./images/work6.jpg">
+    </div>
 </section>
 
+<!-- TARIFS -->
+<section id="pricing" class="section alt pricing">
+    <h2>Nos Tarifs</h2>
+    <p>Demandez notre grille tarifaire ou un devis personnalisé.</p>
+
+    <div class="pricing-buttons">
+        <a href="./docs/tarifs.pdf" class="btn">📄 Télécharger les tarifs</a>
+        <a href="https://wa.me/243849793711" class="btn whatsapp">
+            💬 Demander un devis WhatsApp
+        </a>
+    </div>
+</section>
+
+<!-- CONTACT -->
 <section id="contact" class="section contact">
     <h2>Contact</h2>
-    <p>📍 Goma, RDC</p>
+
+    <p>📍 Goma, DR Congo</p>
     <p>📞 +243 849 793 711</p>
     <p>📧 contact@hopeofyouthsarl.org</p>
 
-    <a href="https://wa.me/243849793711" class="btn whatsapp">
-        💬 WhatsApp
+    <a href="https://wa.me/243849793711" class="btn big">
+        WhatsApp Us
     </a>
 </section>
 
