@@ -1,169 +1,76 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <title>HOPE OF YOUTH SARL | Société Multiservices en RDC</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <script defer src="js/script.js"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>HOPE OF YOUTH SARL | Solutions techniques en RDC</title>
+
+<meta name="description" content="HOPE OF YOUTH SARL est une société multiservices basée à Goma spécialisée en ICT, énergie solaire, télécom, CCTV et solutions techniques en RDC.">
+
+<link rel="stylesheet" href="./css/style.css">
+<script defer src="./js/script.js"></script>
 </head>
 
 <body>
 
-<!-- Floating Video -->
-<div class="youtube-float" id="youtubeWidget">
-    <button class="youtube-close" onclick="closeYoutubeWidget()">&times;</button>
-    <video id="videoPlayer" width="300" height="180" controls autoplay muted>
-        <source src="images/video.png.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
-</div>
-
-<script>
-    window.addEventListener('load', function() {
-        var video = document.getElementById('videoPlayer');
-        if (video) {
-            video.muted = true;
-            var playPromise = video.play();
-            if (playPromise !== undefined) {
-                playPromise.catch(function(error) {
-                    console.log('Autoplay failed:', error);
-                });
-            }
-        }
-    });
-    
-    document.addEventListener('click', function() {
-        var video = document.getElementById('videoPlayer');
-        if (video && video.paused) {
-            video.play();
-        }
-    });
-</script>
-
-<header>
-    <img src="images/logo.png" alt="HOPE OF YOUTH SARL Logo" class="logo">
+<header class="hero">
     <h1>HOPE OF YOUTH SARL</h1>
-    <p>Société Multiservices œuvrant en RDC</p>
-    <a href="#contact" class="btn">Nous Contacter</a>
+    <p>Solutions techniques innovantes en République Démocratique du Congo</p>
+    <a href="#contact" class="btn">Nous contacter</a>
 </header>
 
-<nav>
-    <a href="#apropos">À Propos</a>
-    <a href="#services">Domaines</a>
-    <a href="#references">Références</a>
-    <a href="#mission">Mission</a>
+<nav class="navbar">
+    <a href="#about">À propos</a>
+    <a href="#services">Services</a>
+    <a href="#projects">Références</a>
     <a href="#contact">Contact</a>
 </nav>
 
-<section id="apropos">
-    <h2>À Propos de Nous</h2>
+<section id="about" class="section">
+    <h2>À propos</h2>
     <p>
-        HOPE OF YOUTH SARL est une société multiservices spécialisée dans le transport,
-        l’informatique, les énergies renouvelables, la sécurité électronique,
-        les télécommunications, l’immobilier et les services généraux.
-    </p>
-    <p>
-        Notre équipe dispose d’équipements de haute précision pour l’installation,
-        la maintenance et la gestion de projets techniques à travers la RDC.
+        HOPE OF YOUTH SARL est une société multiservices basée à Goma spécialisée
+        dans les technologies ICT, l’énergie solaire, les télécommunications
+        et la sécurité électronique pour ONG, entreprises et institutions.
     </p>
 </section>
 
-<section id="services">
-    <h2>Nos Domaines d'Intervention</h2>
+<section id="services" class="section alt">
+    <h2>Nos Services</h2>
+
     <div class="grid">
-        <div class="card">Transport multimodal (terrestre, fluvial, aérien)</div>
-        <div class="card">Informatique & Consultance ICT</div>
-        <div class="card">Énergies renouvelables (Solaire)</div>
-        <div class="card">Réseaux LAN & Fibre optique</div>
-        <div class="card">Sécurité électronique (CCTV)</div>
-        <div class="card">Télécom (HF, VHF, VSAT, STARLINK)</div>
-        <div class="card">Immobilier & Mobilier</div>
-        <div class="card">Services généraux</div>
+        <div class="card">💻 Informatique & ICT</div>
+        <div class="card">☀️ Énergie solaire</div>
+        <div class="card">📡 Télécom & Starlink</div>
+        <div class="card">🎥 CCTV & Sécurité</div>
+        <div class="card">🌐 Réseaux & Fibre</div>
+        <div class="card">🚛 Transport logistique</div>
     </div>
 </section>
 
-<section id="references">
-    <h2>Nos Références & Réalisations</h2>
-    <div class="grid">
-
-        <div class="card">
-            <h3>IRC</h3>
-            <p>Installations Radios, CCTV, maintenance informatique (Goma, Bunia, Beni, Kalemie, Nyunzu)</p>
-        </div>
-
-        <div class="card">
-            <h3>TEARFUND</h3>
-            <p>Réparation imprimantes et achat caméra conférence</p>
-        </div>
-
-        <div class="card">
-            <h3>PREMIERE URGENCE INTERNATIONALE</h3>
-            <p>Réparation équipements radios et achats</p>
-        </div>
-
-        <div class="card">
-            <h3>ICON (ICCN - GIAP II)</h3>
-            <p>Livraison ordinateurs, imprimantes, caméras, drone (Epulu, Goma, Parc Kahuzi-Biega)</p>
-        </div>
-
-        <div class="card">
-            <h3>MSF HOLLANDE & MSF France</h3>
-            <p>Installation CCTV & réparation Canon IR 2520</p>
-        </div>
-
-        <div class="card">
-            <h3>PHA & SOCHA</h3>
-            <p>Fourniture matériel informatique et batteries générateur</p>
-        </div>
-
-    </div>
+<section id="projects" class="section">
+    <h2>Références</h2>
+    <p>
+        Nous avons collaboré avec plusieurs ONG internationales et institutions
+        en fournissant des solutions ICT, CCTV et télécom dans plusieurs villes
+        de la RDC.
+    </p>
 </section>
 
-<section id="mission">
-    <h2>Notre Mission</h2>
-    <div class="mission">
-        <p>
-            Notre mission est d’offrir des solutions efficaces, adaptées et durables
-            à nos clients en mettant l’innovation, la qualité et la satisfaction
-            au centre de nos priorités.
-        </p>
-    </div>
-</section>
-<section id="galerie">
-    <div class="gallery-container">
-        <div class="gallery-slide">
-            <img src="images/uhf2.png" alt="UHF 2">
-        </div>
-        <div class="gallery-slide">
-            <img src="images/uhf.png" alt="UHF">
-        </div>
-        <div class="pricing-button">
-            <div class="pricing-content">
-                <div class="switch-images">
-                    <img src="images/switch.png" alt="Switch" class="switch-img">
-                    <img src="images/switch1.png" alt="Switch 1" class="switch-img">
-                </div>
-                <button class="pricing-btn">Nos Tarifs</button>
-            </div>
-        </div>
-        <div class="gallery-slide">
-            <img src="images/team3.png" alt="Team 3">
-        </div>
-    </div>
-</section>
-<section id="contact">
-    <h2>Contacts</h2>
-    <div class="contact-box">
-        <p><strong>Téléphone :</strong> +243 849 793 711</p>
-        <p><strong>Email :</strong> hopeofyouthsarl@gmail.com</p>
-        <p><strong>Adresse :</strong> Goma, Q. Himbi</p>
-        <p><strong>Site web :</strong> <a href="https://www.hopeofyouthsarl.org" target="_blank" rel="noopener">www.hopeofyouthsarl.org</a></p>
-    </div>
+<section id="contact" class="section contact">
+    <h2>Contact</h2>
+    <p>📍 Goma, RDC</p>
+    <p>📞 +243 849 793 711</p>
+    <p>📧 contact@hopeofyouthsarl.org</p>
+
+    <a href="https://wa.me/243849793711" class="btn whatsapp">
+        💬 WhatsApp
+    </a>
 </section>
 
 <footer>
-    <p>© 2026 HOPE OF YOUTH SARL - Tous droits réservés</p>
+    <p>© 2026 HOPE OF YOUTH SARL</p>
 </footer>
 
 </body>
