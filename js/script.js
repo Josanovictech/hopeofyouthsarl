@@ -1,18 +1,25 @@
-// Smooth scroll navbar
-document.querySelectorAll('.navbar a').forEach(link => {
-    link.addEventListener('click', e => {
-        e.preventDefault();
-        const id = link.getAttribute('href');
-        document.querySelector(id).scrollIntoView({
-            behavior: 'smooth'
-        });
+// DARK MODE
+document.getElementById("darkToggle").onclick = () => {
+    document.body.classList.toggle("dark");
+};
+
+// SCROLL REVEAL
+const reveals = document.querySelectorAll(".reveal");
+
+window.addEventListener("scroll", () => {
+    reveals.forEach(el => {
+        const top = el.getBoundingClientRect().top;
+        if(top < window.innerHeight - 100){
+            el.classList.add("active");
+        }
     });
 });
 
-// Navbar shadow on scroll
-window.addEventListener('scroll', () => {
-    const nav = document.querySelector('.navbar');
-    nav.style.boxShadow = window.scrollY > 50
-        ? '0 5px 15px rgba(0,0,0,0.2)'
-        : '0 3px 10px rgba(0,0,0,0.1)';
+// SMOOTH SCROLL
+document.querySelectorAll("a[href^='#']").forEach(link=>{
+    link.onclick=e=>{
+        e.preventDefault();
+        document.querySelector(link.getAttribute("href"))
+        .scrollIntoView({behavior:"smooth"});
+    }
 });
